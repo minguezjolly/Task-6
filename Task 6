@@ -1,12 +1,19 @@
-# Get three numbers from the user
-num1 = float(input("All numbers are equal"))
-num2 = float(input("Enter the second number: "))
-num3 = float(input("Enter the third number: "))
+public class task6 {
 
-# Compare the numbers
-if num1 == num2 == num3:
-    print("All numbers are equal")
-else:
-    # Find the largest number
-    max_number = max(num1, num2, num3)
-    print("The largest number is:", max_number)
+    public static void main(String[] args) {
+
+        double n1 = 11, n2 = 10, n3 = 65;
+
+        if(n1 >= n2) {
+            if(n1 >= n3)
+                System.out.println(n1 + " is the largest number.");
+            else
+                System.out.println(n3 + " is the largest number.");
+        } else {
+            if(n2 >= n3)
+                System.out.println(n2 + " is the largest number.");
+            else
+                System.out.println(n3 + " is the largest number.");
+        }
+    }
+}
